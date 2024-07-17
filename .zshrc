@@ -21,7 +21,7 @@ autoload -Uz compinit && compinit
 zinit cdreplay -q
 
 # Prompt
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/config.toml)"
 
 # Keybindings
 bindkey -e
