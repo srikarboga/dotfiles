@@ -8,10 +8,6 @@
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
-        "sway/mode",
-        "sway/scratchpad"
-    ],
-    "modules-center": [
         "hyprland/window"
     ],
     "modules-right": [
@@ -33,22 +29,34 @@
         "max-length": 200,
         "separate-outputs": true
     },
-    // "hyprland/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
+    "hyprland/workspaces": {
+        "format": "{icon}    {windows} ",
+        // "format-icons": {
+        //     "1": "",
+        //     "2": "",
+        //     "3": "",
+        //     "4": "",
+        //     "5": "",
+        //     "urgent": "",
+        //     "focused": "",
+        //     "default": ""
+        // }
+        "window-rewrite-default": "?",
+        "window-rewrite": {
+          "class<org.mozilla.firefox>": "",
+          "class<Google-chrome-unstable>": "",
+          "class<pavucontrol>": "",
+          "class<kitty>": "",
+          "class<code>": "",
+          "class<steam>": "",
+          "class<discord>": "",
+          "class<Slack>": "",
+          "class<1Password>": "",
+          "class<thunar>": "",
+          "class<Gimp-2.10>": "",
+          "class<com.obsproject.Studio>": "",
+        },
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,

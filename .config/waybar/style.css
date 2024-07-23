@@ -1,6 +1,6 @@
 * {
-    font-family: 'Noto Sans Mono', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
-    font-size: 13px;
+    font-family: 'Iosevka Nerd Font', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
+    font-size: 15px;
 }
 
 window#waybar {
@@ -63,7 +63,7 @@ button:hover {
 }
 
 #workspaces button.active {
-    background-color: #64727D;
+    background-color: #3633ff;
     box-shadow: inset 0 -3px #ffffff;
 }
 
@@ -113,17 +113,7 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
-}
-
-#battery {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-#battery.charging, #battery.plugged {
-    color: #ffffff;
-    background-color: #26A65B;
+    background-color: #3633ff;
 }
 
 @keyframes blink {
@@ -133,77 +123,44 @@ button:hover {
     }
 }
 
-/* Using steps() instead of linear as a timing function to limit cpu usage */
-#battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: steps(12);
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-#power-profiles-daemon {
-    padding-right: 15px;
-}
-
-#power-profiles-daemon.performance {
-    background-color: #f53c3c;
-    color: #ffffff;
-}
-
-#power-profiles-daemon.balanced {
-    background-color: #2980b9;
-    color: #ffffff;
-}
-
-#power-profiles-daemon.power-saver {
-    background-color: #2ecc71;
-    color: #000000;
-}
-
 label:focus {
     background-color: #000000;
 }
 
 #cpu {
-    background-color: #2ecc71;
-    color: #000000;
+    background-color: #3633ff;
 }
 
 #memory {
-    background-color: #9b59b6;
+    background-color: #3633ff;
 }
 
 #disk {
-    background-color: #964B00;
+    background-color: #3633ff;
 }
 
 #backlight {
-    background-color: #90b1b1;
+    background-color: #3633ff;
 }
 
 #network {
-    background-color: #2980b9;
+    background-color: #3633ff;
 }
 
 #network.disconnected {
-    background-color: #f53c3c;
+    background-color: #3633ff;
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+    background-color: #3633ff;
 }
 
 #pulseaudio.muted {
     background-color: #90b1b1;
-    color: #2a5c45;
 }
 
 #wireplumber {
-    background-color: #fff0f5;
+    background-color: #3633ff;
     color: #000000;
 }
 
@@ -223,14 +180,6 @@ label:focus {
 
 #custom-media.custom-vlc {
     background-color: #ffa000;
-}
-
-#temperature {
-    background-color: #f0932b;
-}
-
-#temperature.critical {
-    background-color: #eb4d4b;
 }
 
 #tray {
