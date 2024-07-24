@@ -25,7 +25,7 @@
         "separate-outputs": true
     },
     "hyprland/workspaces": {
-        "format": "{icon}    {windows} ",
+        "format": " {icon}    {windows} ",
         // "format-icons": {
         //     "1": "",
         //     "2": "",
