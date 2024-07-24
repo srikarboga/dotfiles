@@ -47,6 +47,8 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 # Aliases
 alias ls='ls --color'
+#To view images in kitty
+alias icat="kitten icat"
 
 #Shell integrations
 eval "$(zoxide init --cmd cd zsh)"

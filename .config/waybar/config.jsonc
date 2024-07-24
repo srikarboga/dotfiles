@@ -40,7 +40,8 @@
         "window-rewrite": {
           "class<org.mozilla.firefox>": "",
           "class<Google-chrome-unstable>": "",
-          "class<pavucontrol>": "",
+          "class<Google-chrome>": "",
+          "class<org.pulseaudio.pavucontrol>": "",
           "class<kitty>": "",
           "class<code>": "",
           "class<steam>": "",
