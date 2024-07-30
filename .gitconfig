@@ -2,4 +2,4 @@
 	name = srikarboga
 	email = boggavarapu.srikar@gmail.com
 [core]
-	editor = nvim
+	editor = vi
