@@ -163,6 +163,43 @@ vim.opt.expandtab = true
 vim.g.zig_fmt_parse_errors = 0
 vim.g.zig_fmt_autosave = 0
 
+-- remaps
+-- Allows me to move lines around in visual mode
+vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
+vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
+
+--makes search terms stay in the middle
+vim.keymap.set('n', 'n', 'nzzzv')
+vim.keymap.set('n', 'N', 'Nzzzv')
+
+--allows paste without removing current buffer
+vim.keymap.set('x', '<leader>p', '"_dP')
+
+--allows ci without removing current paste buffer
+vim.keymap.set('n', 'ci(', '"_ci(')
+vim.keymap.set('n', 'ci)', '"_ci)')
+vim.keymap.set('n', 'ci{', '"_ci{')
+vim.keymap.set('n', 'ci}', '"_ci}')
+vim.keymap.set('n', "ci'", '"_ci\'')
+vim.keymap.set('n', 'ci[', '"_ci[')
+vim.keymap.set('n', 'ci]', '"_ci]')
+vim.keymap.set('n', 'ci"', '"_ci"')
+
+--allows use of d without copying
+vim.keymap.set('n', 'd', '"_d')
+vim.keymap.set('v', 'd', '"_d')
+
+--inverse tab in insert mode
+vim.keymap.set('i', '<S-Tab>', '<C-d>')
+
+--tabs in normal mode
+vim.keymap.set('n', '<S-Tab>', '<<')
+vim.keymap.set('n', '<Tab>', '>>')
+
+-- capital Q sucks according to primagen
+vim.keymap.set('n', 'Q', '<nop>')
+vim.keymap.set('n', 'q:', '<nop>')
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
