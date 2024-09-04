@@ -191,7 +191,11 @@ vim.keymap.set('n', 'd', '"_d')
 vim.keymap.set('v', 'd', '"_d')
 
 --inverse tab in insert mode
-vim.keymap.set('i', '<S-Tab>', '<C-d>')
+--WTF IS THIS DOING
+--vim.keymap.set('i', '<S-Tab>', '<C-d>')
+
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
 
 --tabs in normal mode
 vim.keymap.set('n', '<S-Tab>', '<<')
@@ -274,7 +278,7 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
 
-  -- 'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
+  'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
 
   -- NOTE: Plugins can also be added by using a table,
   -- with the first argument being the link and the following
@@ -713,6 +717,9 @@ require('lazy').setup({
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
         -- javascript = { { "prettierd", "prettier" } },
+        -- javascript = { 'prettier' },
+        html = { 'prettier' },
+        css = { 'prettier' },
       },
     },
   },
