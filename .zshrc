@@ -53,3 +53,6 @@ alias icat="kitten icat"
 #Shell integrations
 eval "$(zoxide init --cmd cd zsh)"
 
+#Path stuff
+export PATH=$PATH:/home/srikar/.local/bin
+
