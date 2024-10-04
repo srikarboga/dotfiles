@@ -2,6 +2,6 @@
 	name = srikarboga
 	email = boggavarapu.srikar@gmail.com
 [core]
-	editor = vi
+	editor = vim
 [init]
 	defaultBranch = main
