@@ -1,4 +1,5 @@
 # Set the directory we want to store zinit and plugins
+export TERM=xterm-256color
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
 # Download Zinit, if it's not there yet
@@ -52,4 +53,7 @@ alias icat="kitten icat"
 
 #Shell integrations
 eval "$(zoxide init --cmd cd zsh)"
+
+#Path stuff
+export PATH=$PATH:/home/srikar/.local/bin
 
