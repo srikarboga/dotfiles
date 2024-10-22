@@ -105,7 +105,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "~/.config/waybar/scripts/toggle_pavu.sh"
     },
     "custom/media": {
         "format": "{icon} {}",
