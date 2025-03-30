@@ -32,7 +32,7 @@ const vec3 Balance = vec3(
  * @min -1.0
  * @max 1.0
  */
-const float Strength = 0.40;
+const float Strength = 0.35;
 const vec3 VIB_coeffVibrance = Balance * -Strength;
 
 void main() {
