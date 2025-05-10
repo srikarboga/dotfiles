@@ -1,5 +1,4 @@
 # .bashrc
-
 export TERM=xterm-256color
 
 # Source global definitions
@@ -25,4 +24,14 @@ if [ -d ~/.bashrc.d ]; then
     done
 fi
 unset rc
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"
+
+# Start Zsh automatically if not already in Zsh
+if [ -t 1 ]; then
+  exec zsh
+fi
+
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

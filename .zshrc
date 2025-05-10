@@ -51,9 +51,16 @@ alias ls='ls --color'
 #To view images in kitty
 alias icat="kitten icat"
 
+# Force block cursor in terminal
+echo -ne '\e[2 q'
+
+
 #Shell integrations
 eval "$(zoxide init --cmd cd zsh)"
 
 #Path stuff
 export PATH=$PATH:/home/srikar/.local/bin
 
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
