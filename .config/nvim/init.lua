@@ -210,6 +210,9 @@ vim.keymap.set('n', 'q:', '<nop>')
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
+--
+-- Map <leader>a to :Explore
+vim.keymap.set('n', '<leader>a', ':Explore<CR>', { noremap = true, silent = true, desc = 'Open netrw file explorer' })
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
@@ -907,6 +910,7 @@ require('lazy').setup({
       ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 'markdown', 'vim', 'vimdoc' },
       -- Autoinstall languages that are not installed
       auto_install = true,
+      playground = { enable = false },
       highlight = {
         enable = true,
         -- Some languages depend on vim's regex highlighting system (such as Ruby) for indent rules.
