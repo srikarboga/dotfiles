@@ -644,7 +644,12 @@ require('lazy').setup({
         --
         ts_ls = {},
         html = {
-          filetypes = { 'svelte' },
+          filetypes = { 'html', 'svelte' },
+          on_attach = function(client, bufnr)
+            if vim.bo[bufnr].filetype == 'svelte' then
+              client.server_capabilities.documentFormattingProvider = false
+            end
+          end,
         },
 
         lua_ls = {
