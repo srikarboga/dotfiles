@@ -644,13 +644,14 @@ require('lazy').setup({
         --
         ts_ls = {},
         html = {
-          filetypes = { 'html', 'svelte' },
+          filetypes = { 'html' },
           on_attach = function(client, bufnr)
             if vim.bo[bufnr].filetype == 'svelte' then
               client.server_capabilities.documentFormattingProvider = false
             end
           end,
         },
+        svelte = {},
 
         gopls = {},
 
