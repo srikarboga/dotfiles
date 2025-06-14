@@ -1,7 +1,9 @@
 [user]
-	name = srikarboga
+	name = Srikar Boggavarapu
 	email = boggavarapu.srikar@gmail.com
 [core]
 	editor = vim
 [init]
 	defaultBranch = main
+[commit]
+	gpgsign = true

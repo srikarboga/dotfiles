@@ -1,2 +1,4 @@
 .config/rstudio
 .config/karabiner
+.ssh/
+.gnupg/
