@@ -2,3 +2,4 @@
 .config/karabiner
 .ssh/
 .gnupg/
+.config/go/
