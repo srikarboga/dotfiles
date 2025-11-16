@@ -20,11 +20,6 @@ return {
         -- optional `vim.uv` typings for lazydev
         { "Bilal2453/luvit-meta", lazy = true },
         "mfussenegger/nvim-jdtls",
-        {
-            url = "ssh://git.amazon.com/pkg/VimBrazilConfig",
-            branch = "mainline",
-            ft = "brazil-config",
-        },
         "hrsh7th/cmp-nvim-lsp",
     },
 
@@ -43,24 +38,6 @@ return {
             default_capabilities,
             cmp_nvim_lsp.default_capabilities()
         )
-
-        vim.filetype.add({
-            filename = {
-                ['Config'] = function()
-                    vim.b.brazil_package_Config = 1
-                    return 'brazil-config'
-                end,
-            },
-        })
-        configs.barium = {
-            default_config = {
-                cmd = {'barium'},
-                filetypes = {'brazil-config'},
-                root_dir = lspconfig.util.root_pattern('.git'),
-                settings = {},
-            },
-        }
-        lspconfig.barium.setup({})
 
         local server_configs = {
             -- place language server names and their configuration here as a key-value pair
